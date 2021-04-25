@@ -74,3 +74,32 @@ $ rostopic list
 ## Kill roscore: 
 $ killall -9 roscore
 $ killall -9 rosmaster
+
+
+
+Basic ROS command
+$ roscore
+$ tostopic list
+$ roscd
+$ rosrun
+$ roslaunch
+$ rostopic echo <topic name>
+$ rostopic info <topic name>
+$ rosmsg show <topic name>
+
+$ rosbag info <file name>
+
+
+## Turtlesim: Not completed
+$ sudo apt-get install ros-$(rosversion -d)-turtlesim
+$ rosrun turtlesim turtlesim_node
+
+
+$ rosrun beginner_tutorials turtlesim_publisher.py
+$ rosrun beginner_tutorials turtlesim_subcriber.py
+
+$ rostopic echo turtleX/cmd_vel 
+$ rostopic echo geometry_msgs/Twist
+
+$ rostopic echo turtleX/pose 
+$ rostopic echo turtlesim/Pose

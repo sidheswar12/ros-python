@@ -212,3 +212,11 @@ catkin_install_python(PROGRAMS scripts/talker.py
 catkin_install_python(PROGRAMS scripts/talker.py scripts/listener.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+catkin_install_python(PROGRAMS scripts/turtlesim_publisher.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+catkin_install_python(PROGRAMS scripts/talker.py scripts/turtlesim_subcriber.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
